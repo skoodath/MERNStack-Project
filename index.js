@@ -107,7 +107,7 @@ app.post('/api/persons', (request, response) => {
     }
     if (person === undefined) {
         persons = persons.concat(contact);
-        response.json(persons);
+        response.json(contact);
     }
     else {
         response.status(400).end(`${body.name} already exists`)
