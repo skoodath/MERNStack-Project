@@ -25,15 +25,12 @@ const requestLogger = (request, response, next) => {
     console.log('---')
     next();
 } 
-
 app.use(requestLogger);
-
 /*let persons = [
     { 
         id: 1,
         name: 'Arto Hellas', 
         number: '040-123456'
-        
     },
     { 
         id: 2,
